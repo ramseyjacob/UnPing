@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "UnPing",
+    "description": "Removes the ping attribute from all anchor tags.",
+    "version": "0.1.0",
+    "content_scripts": [{
+        "js": ["removePing.js"],
+        "matches": ["<all_urls>"]
+      }],
+      "options_ui": {
+        "page": "userOptions.html",
+        "open_in_tab": false
+      },
+      "permissions": [
+        "storage"
+      ]
+}
